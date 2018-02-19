@@ -42,7 +42,8 @@ public class DatoControllerTest {
      */
     @Test
     public void testGetIt() {
-        String responseMsg = target.path("myresource").request().get(String.class);
-        assertEquals("Got it!", responseMsg);
+        String resp = "[{'edad':'gustavo','valor':51},{'edad':'adolfo','valor':23},{'edad':'luis','valor':17}]";
+        String responseMsg = target.path("datos").request().get(String.class);
+        assertEquals(resp.replace("'", "\""), responseMsg);
     }
 }
