@@ -7,7 +7,8 @@ import java.io.IOException;
 import java.net.URI;
 
 public class Main {
-    public static final String BASE_URI = "http://132.248.39.236:8080/jersey-sample/";
+    public static final String IP = "localhost";//"132.248.39.236";
+    public static final String BASE_URI = "http://"+IP+":8080/jersey-sample/";
 
     @SuppressWarnings("deprecation")
     public static void main(String[] args) throws IOException {
