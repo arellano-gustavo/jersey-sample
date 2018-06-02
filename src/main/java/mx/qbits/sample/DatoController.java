@@ -7,7 +7,6 @@ import javax.ws.rs.core.MediaType;
 
 @Path("datos")
 public class DatoController {
-
     /**
      * Method handling HTTP GET requests. The returned object will be sent
      * to the client as "json" media type.
