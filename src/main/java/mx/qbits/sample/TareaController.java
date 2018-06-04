@@ -16,6 +16,7 @@ public class TareaController {
     }
     
     public boolean construye(String fuente) {
-        return false;
+        String tmp = fuente + fuente;
+        return tmp.substring(1, tmp.length()-1).contains(fuente); 
     }
 }
